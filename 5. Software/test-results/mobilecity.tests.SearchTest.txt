@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: mobilecity.tests.SearchTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 94.25 s <<< FAILURE! -- in mobilecity.tests.SearchTest
+mobilecity.tests.SearchTest.TC_SEARCH_002_NoResultSearch -- Time elapsed: 15.21 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Loi: Tu khoa vo nghia nhung van tra ve san pham! ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at mobilecity.tests.SearchTest.TC_SEARCH_002_NoResultSearch(SearchTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+mobilecity.tests.SearchTest.TC_SEARCH_006_VietnameseKeyword -- Time elapsed: 18.33 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Loi: Khong tim thay san pham nao cho tu khoa tieng Viet co dau! ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at mobilecity.tests.SearchTest.TC_SEARCH_006_VietnameseKeyword(SearchTest.java:128)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

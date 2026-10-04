@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: mobilecity.tests.HomeTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 162.6 s <<< FAILURE! -- in mobilecity.tests.HomeTest
+mobilecity.tests.HomeTest.TC_NAV_001_CategoryLink -- Time elapsed: 36.31 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href='https://mobilecity.vn/dien-thoai'], a[href*='/dien-thoai'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.95, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, goog:processID: 18140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 154.0.8037.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3324ad6ddbccd22f683a858343b7d45
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at mobilecity.pages.BasePage.waitForClickable(BasePage.java:32)
+	at mobilecity.pages.BasePage.click(BasePage.java:40)
+	at mobilecity.pages.HomePage.openPhoneCategory(HomePage.java:101)
+	at mobilecity.tests.HomeTest.TC_NAV_001_CategoryLink(HomeTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

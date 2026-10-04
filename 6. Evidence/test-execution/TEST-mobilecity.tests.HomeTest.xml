@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mobilecity.tests.HomeTest" time="162.603" tests="11" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software\target\test-classes;C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software\target\classes;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\admin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\admin\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\admin\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="VN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire11581077803047450144\surefirebooter-20261004214618211_3.jar C:\Users\admin\AppData\Local\Temp\surefire11581077803047450144 2026-10-04T21-46-17_887-jvmRun1 surefire-20261004214618211_1tmp surefire_0-20261004214618211_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software\target\test-classes;C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software\target\classes;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\admin\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\admin\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\admin\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.language" value="vi"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-26.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire11581077803047450144\surefirebooter-20261004214618211_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="26.0.1+8-34"/>
+    <property name="user.name" value="admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="26.0.1"/>
+    <property name="user.dir" value="C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-26.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Apache NetBeans\java\maven\bin;C:\Program Files\Java\jdk-26.0.1\bin;C:/Users/admin/.gemini/antigravity/bin;C:\Users\admin\AppData\Roaming\Antigravity\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Rational\common;C:\Apache NetBeans\jdk\;C:\Apache NetBeans\jdk\;C:\Apache NetBeans\jdk\bin;D:\Git\cmd;C:\Program Files\nodejs\;C:\Users\admin\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python314\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\msys64\ucrt64\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;D:\PyCharm 2025.1.3.1\bin;;C:\Program Files\Azure Data Studio\bin;C:\Users\admin\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool;C:\Users\admin\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="26.0.1+8-34"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="70.0"/>
+  </properties>
+  <testcase name="TC_HOME_003_LogoDisplay" classname="mobilecity.tests.HomeTest" time="14.315">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-HOME-003 - Kiem tra logo MobileCity hien thi tren trang chu
+==================================================
+  [Step 1] Kiem tra logo hien thi
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-HOME-003 - Kiem tra logo MobileCity hien thi tren trang chu
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:49:11 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:49:11 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NAV_002_LogoClick" classname="mobilecity.tests.HomeTest" time="13.628">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-NAV-002 - Click logo -> ve trang chu
+==================================================
+  [Step 1] Chuyen den trang /dien-thoai truoc
+  [Step 2] Click logo de quay ve trang chu
+  [Step 3] Xac thuc URL da ve trang chu
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-NAV-002 - Click logo -> ve trang chu
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:49:25 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:49:25 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_HOME_002_PageTitle" classname="mobilecity.tests.HomeTest" time="9.091">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-HOME-002 - Kiem tra tieu de trang chu dung
+==================================================
+  [Step 1] Lay tieu de trang chu
+  [Actual Title]: Cửa hàng điện thoại Uy tín gần đây nhất. Cam kết giá RẺ tại Hà Nội, Đà Nẵng, Tp.HCM
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-HOME-002 - Kiem tra tieu de trang chu dung
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:49:39 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:49:39 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_LOC_001_DefaultLocation" classname="mobilecity.tests.HomeTest" time="9.614">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-LOC-001 - Dropdown location hien thi mac dinh la Ha Noi
+==================================================
+  [Step 1] Kiem tra Dropdown Location hien thi
+  [Step 2] Kiem tra gia tri mac dinh
+  [Default Location]: Hà Nội
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-LOC-001 - Dropdown location hien thi mac dinh la Ha Noi
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:49:48 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:49:48 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_HOME_001_PageLoad" classname="mobilecity.tests.HomeTest" time="7.36">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-HOME-001 - Kiem tra trang chu tai thanh cong
+==================================================
+  [Step 1] Kiem tra URL hien tai
+  [Actual URL]: https://mobilecity.vn/
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-HOME-001 - Kiem tra trang chu tai thanh cong
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:49:58 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:49:58 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NAV_001_CategoryLink" classname="mobilecity.tests.HomeTest" time="36.305">
+    <error message="Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href=&apos;https://mobilecity.vn/dien-thoai&apos;], a[href*=&apos;/dien-thoai&apos;] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.95, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, goog:processID: 18140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 154.0.8037.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d3324ad6ddbccd22f683a858343b7d45" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href='https://mobilecity.vn/dien-thoai'], a[href*='/dien-thoai'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.95, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, goog:processID: 18140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 154.0.8037.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3324ad6ddbccd22f683a858343b7d45
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at mobilecity.pages.BasePage.waitForClickable(BasePage.java:32)
+	at mobilecity.pages.BasePage.click(BasePage.java:40)
+	at mobilecity.pages.HomePage.openPhoneCategory(HomePage.java:101)
+	at mobilecity.tests.HomeTest.TC_NAV_001_CategoryLink(HomeTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+]]></error>
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-NAV-001 - Click menu 'Dien thoai' -> chuyen den trang danh muc
+==================================================
+  [Step 1] Click vao menu 'Dien thoai'
+>> [LISTENER] Phat hien test FAIL: TC_NAV_001_CategoryLink -> Tien hanh chup anh man hinh...
+>> DA LUU SCREENSHOT TEST THAT BAI TAI: C:\Users\admin\.gemini\antigravity\scratch\Team\5. Software\screenshots\TC_NAV_001_CategoryLink_20261004_215040_FAIL.png
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:50:05 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:50:05 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+==================================================
+KET QUA: [FAIL] - Test case: TC-NAV-001 - Click menu 'Dien thoai' -> chuyen den trang danh muc
+Ly do loi: Expected condition failed: waiting for element to be clickable: By.cssSelector: a[href='https://mobilecity.vn/dien-thoai'], a[href*='/dien-thoai'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.95, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59305}, goog:processID: 18140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59305/devtoo..., se:cdpVersion: 154.0.8037.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3324ad6ddbccd22f683a858343b7d45
+==================================================
+]]></system-err>
+  </testcase>
+  <testcase name="TC_HOME_004_SearchBar" classname="mobilecity.tests.HomeTest" time="13.885">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-HOME-004 - Kiem tra thanh tim kiem hien thi tren trang chu
+==================================================
+  [Step 1] Kiem tra o nhap tim kiem hien thi
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-HOME-004 - Kiem tra thanh tim kiem hien thi tren trang chu
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:50:41 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:50:41 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_LOC_002_ChangeLocation" classname="mobilecity.tests.HomeTest" time="20.536">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-LOC-002 - Thay doi location sang TP.HCM -> trang cap nhat
+==================================================
+  [Step 1] Chon location: TP. Hồ Chí Minh
+  [Step 2] Xac thuc gia tri duoc cap nhat
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-LOC-002 - Thay doi location sang TP.HCM -> trang cap nhat
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:50:55 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:50:55 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NAV_004_RegisterLink" classname="mobilecity.tests.HomeTest" time="11.38">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-NAV-004 - Click 'Dang ky' -> chuyen den trang register
+==================================================
+  [Step 1] Click nut Dang ky
+  [Step 2] Xac thuc URL chua /register
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-NAV-004 - Click 'Dang ky' -> chuyen den trang register
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:51:16 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:51:16 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NAV_003_LoginLink" classname="mobilecity.tests.HomeTest" time="14.0">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-NAV-003 - Click 'Dang nhap' -> chuyen den trang login
+==================================================
+  [Step 1] Click nut Dang nhap
+  [Step 2] Xac thuc URL chua /login
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-NAV-003 - Click 'Dang nhap' -> chuyen den trang login
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:51:27 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:51:27 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_HOME_005_NavigationMenu" classname="mobilecity.tests.HomeTest" time="12.459">
+    <system-out><![CDATA[
+--------------------------------------------------
+>> [SETUP] Khoi tao trinh duyet va mo he thong MobileCity...
+>> [NAVIGATE] Dang truy cap: https://mobilecity.vn/
+==================================================
+TEST CASE: TC-HOME-005 - Kiem tra menu dieu huong hien thi day du
+==================================================
+  [Step 1] Kiem tra menu danh muc dien thoai hien thi
+>> [TEARDOWN] Dong trinh duyet va giai phong tai nguyen...
+--------------------------------------------------
+
+==================================================
+KET QUA: [PASS] - Test case: TC-HOME-005 - Kiem tra menu dieu huong hien thi day du
+==================================================
+]]></system-out>
+    <system-err><![CDATA[thg 10 04, 2026 9:51:41 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+thg 10 04, 2026 9:51:41 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.95. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

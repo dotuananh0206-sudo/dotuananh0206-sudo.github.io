@@ -1,0 +1,16 @@
+# Maven build artifacts (mã nguồn và reports/screenshots được giữ nguyên)
+**/target/
+*.class
+
+# IDE configurations
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS temporary files
+Thumbs.db
+Desktop.ini
+.DS_Store
