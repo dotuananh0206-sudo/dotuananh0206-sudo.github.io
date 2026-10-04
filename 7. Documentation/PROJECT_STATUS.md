@@ -88,7 +88,7 @@ Team/
 | **PHASE 6** | Defect Report | ✅ Hoàn thành | `Team/3. DefectReport.xlsx` (4 sheets: Defects, DefectSummary, Retest, Regression) |
 | **PHASE 7** | Fix Defect (Phương án B / Test Env) | ✅ Hoàn thành | Phân tích RCA & giải pháp kỹ thuật tại `Team/7. Documentation/DefectAnalysis_And_FixStrategy.md` |
 | **PHASE 8** | Retest | ✅ Hoàn thành | Thực thi Retest thật trên Chrome, ghi nhận FAIL (Reopen) & screenshot mới |
-| **PHASE 9** | Regression | ⬜ Chưa bắt đầu | Sheet Regression trong DefectReport |
+| **PHASE 9** | Regression | ✅ Hoàn thành | Chạy 9 test cases hồi quy trên Chrome, 100% PASS (0 lỗi mới) |
 | **PHASE 10**| Test Report | ⬜ Chưa bắt đầu | `Team/4. TestReport.pdf` |
 | **PHASE 11**| Kết luận chuẩn chuyên môn | ⬜ Chưa bắt đầu | Kết luận dựa trên số liệu thực tế |
 | **PHASE 12**| Kiểm tra tính nhất quán | ⬜ Chưa bắt đầu | Cross-check toàn bộ tài liệu |
